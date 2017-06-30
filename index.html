@@ -1,0 +1,112 @@
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<title>PSA Visualisation</title>
+
+    <script src="js/leaflet/leaflet.js"></script>
+    <script src="js/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/math/math.min.js"></script>
+    <script src="js/underscore/underscore-min.js"></script>
+  	<!--<script src="js/d3/d3.js"></script>-->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+
+    <script src='dist/metricsgraphics.min.js'></script>
+
+    <!-- dev start -->
+    <script src='js/metrics/MG.js'></script>
+    <script src='js/metrics/misc/utility.js'></script>
+    <script src='js/metrics/common/data_graphic.js'></script>
+    <script src='js/metrics/common/hooks.js'></script>
+    <script src='js/metrics/common/register.js'></script>
+    <script src='js/metrics/common/bootstrap_tooltip_popover.js'></script>
+    
+    <script src='js/metrics/common/chart_title.js'></script>
+    <script src='js/metrics/common/y_axis.js'></script>
+    <script src='js/metrics/common/x_axis.js'></script>
+    <script src='js/metrics/common/scales.js'></script>
+    <script src='js/metrics/common/init.js'></script>
+    <script src='js/metrics/common/markers.js'></script>
+    <script src='js/metrics/common/rollover.js'></script>
+    <script src='js/metrics/common/window_listeners.js'></script>
+    <script src='js/metrics/layout/bootstrap_dropdown.js'></script>
+    <script src='js/metrics/layout/button.js'></script>
+    <script src='js/metrics/charts/line.js'></script>
+    <script src='js/metrics/charts/histogram.js'></script>
+    <script src='js/metrics/charts/point.js'></script>
+    <script src='js/metrics/charts/bar.js'></script>
+    <script src='js/metrics/charts/table.js'></script>
+    <script src='js/metrics/charts/missing.js'></script>
+    <script src='js/metrics/misc/process.js'></script>
+    <script src='js/metrics/misc/smoothers.js'></script>
+    <script src='js/metrics/misc/formatters.js'></script>
+    <script src='js/metrics/misc/transitions.js'></script>
+    <script src='js/metrics/misc/error.js'></script>
+    <!-- dev end -->
+
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  </head>
+  <body>
+    <div id="menu">
+      <h1>
+        <a href="/">
+          <img src="images/menu.png" alt="Menu"></img>
+          <span>Véhicules connectés</span>
+        </a>
+      </h1>
+      <div id="vehicle" class="btn-group filter">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Filtrer par véhicule <span class="caret"></span>
+        </button>
+        <div class="dropdown-menu list-group scrollable-menu"></div>
+      </div>
+      <div id="trip" class="btn-group filter">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Filtrer par trajet <span class="caret"></span>
+        </button>
+        <div class="dropdown-menu list-group scrollable-menu"></div>
+      </div>
+    </div>
+
+    <div class="histograms">
+    	<div class="hist-plug">
+    	  <figure id="histogram1" class="histogram"></figure>
+        <div id="selector2" class="btn-group selector_hist " >
+      		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      		  Choix de la variable <span class="caret"></span>
+      		</button>
+      		<div class="dropdown-menu list-group scrollable-menu"></div>
+      	</div>
+    	</div>
+
+    	<div class="hist-plug">
+      	<figure id="histogram2" class="histogram"></figure>
+      	<figure id="memoryGaugeContainer" class="gauge"></figure>
+    	</div>
+    </div>
+
+    <!-- ci dessous la carte!-->
+    <figure id="map">
+      <div id="selector" class="leaflet-bar leaflet-control leaflet-control-custom btn-group selector" style="display: none">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Choix de la variable <span class="caret"></span>
+        </button>
+        <div class="dropdown-menu list-group scrollable-menu"></div>
+      </div>
+    </figure>
+    <figure id="hamdi"></figure>
+    <figure id="times_series" class="times_series"></figure>
+    <script type="text/javascript" src="js/loader.js"></script>
+    <script type="text/javascript" src="js/D3SvgOverlay.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <!-- Import your script here -->
+    <script type="text/javascript" src="js/times_series.js"></script>
+    <script type="text/javascript" src="js/carbone.js"></script>
+    <script type="text/javascript" src="js/hist.js"></script>
+    <script type="text/javascript" src="js/gauge_index.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

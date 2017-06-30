@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#menu {
+  width: 100%;
+  height: 10%;
+  margin: 0;
+  padding-top: 1.2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #110055;
+}
+
+#menu h1 {
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+#menu h1 > a, h1 > a:visited, h1 > a:hover, h1 > a:active, h1 > a:focus {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#menu img {
+  float: left;
+  width: 1em;
+  height: 1em;
+  margin: 0;
+  padding: 0;
+  margin-right: 5%;
+}
+
+.dropdown-menu.list-group.scrollable-menu {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  max-height: 500%;
+  overflow-x: hidden;
+  z-index: 1000000;
+}
+
+.filter {
+  margin: 0;
+  padding: 0;
+  margin-right: 5%;
+  float: left;
+  z-index: 1000000;
+}
+
+.leaflet-bar.selector a {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+.btn-group.selector_hist  {
+
+  position: absolute;
+  right:1%;
+  z-index: 2;
+}
+
+#map {
+  margin: 0;
+  padding: 0;
+  float: right;
+  width: 50%;
+  height: 45%;
+}
+
+#hamdi {
+  margin: 0;
+  padding: 0;
+  float: right;
+  width: 50%;
+  height: 45%;
+}
+#hamdi path {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3px;
+  position: relative;
+  z-index: -11;
+}
+
+#hamdi circle {
+  fill: steelblue;
+  stroke: #fff;
+  stroke-width: 3px;
+  position: absolute;
+  z-index: 11;
+}
+
+#hamdi .veh{
+  position: absolute;
+  z-index: 10;
+}
+
+#hamdi .path{
+  position: relative;
+  z-index: -10;
+}
+
+.histogram {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+  height: 100%;
+  z-index:1;
+}
+
+.histograms {
+  width: 50%;
+  height: 45%;
+  float: left;
+}
+
+.hist-plug {
+  z-index:1;
+  width: 50%;
+  height:100%;
+  float: left;
+
+  position: relative;
+}
+
+
+.times_series {
+  
+  margin: 0;
+  padding: 0;
+  float: left;
+
+  width: 50%;
+  height: 25%;
+}
+
+/*----- Jauge -----*/
+.gauge {
+  position: absolute;
+  right:1%;
+  margin: 0;
+  padding: 0;
+  z-index:8;
+}
