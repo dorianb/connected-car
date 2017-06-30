@@ -1,2 +1,2 @@
-![alt text](https://github.com/dorianb/connected-car/Capture.png)
+![alt text](https://github.com/dorianb/connected-car/blob/master/Capture.png)
 
